@@ -1,0 +1,20 @@
+<div [classList]="'layout-wide row break'">
+  <p>Note</p>
+  <p-inputNumber [(ngModel)]="gradeEntry.grade" mode="decimal" [min]="1" [max]="6" [maxFractionDigits]="2" [showButtons]="true" [step]="0.5" ></p-inputNumber>
+  <p>bei</p>
+  <p-inputNumber [(ngModel)]="gradeEntry.weight" [min]="1" [showButtons]="true"  ></p-inputNumber>
+  <p>Wochenstunde(n)</p>
+  <p-button (onClick)="this.onDelete.emit(gradeEntry)" icon="pi pi-trash" severity="danger"></p-button>
+</div>
+
+<div [classList]="'layout-narrow row break'">
+    <span [classList]="'row'">
+      <p>Note:</p>
+    <p-inputNumber [(ngModel)]="gradeEntry.grade" mode="decimal" [min]="1" [max]="6" [maxFractionDigits]="2" [showButtons]="true" [step]="0.5" ></p-inputNumber>
+    </span>
+  <span [classList]="'row'">
+      <p>H/Wo:</p>
+      <p-inputNumber [(ngModel)]="gradeEntry.weight" [min]="1" [showButtons]="true"  ></p-inputNumber>
+    </span>
+  <p-button (onClick)="this.onDelete.emit(gradeEntry)" icon="pi pi-trash" severity="danger"></p-button>
+</div>

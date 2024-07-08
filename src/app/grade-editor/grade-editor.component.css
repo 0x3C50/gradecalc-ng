@@ -1,0 +1,15 @@
+.break {
+  flex-wrap: wrap;
+}
+.layout-narrow {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .layout-wide {
+    display: none;
+  }
+  .layout-narrow {
+    display: flex;
+  }
+}

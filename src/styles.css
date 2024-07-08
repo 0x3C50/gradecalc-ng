@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/aura-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+@import "primeicons/primeicons.css";
+.row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 7px;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
